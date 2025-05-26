@@ -72,7 +72,7 @@ app.get("/hotels/:hotelName", async (req, res) => {
       res.status(404).json({ error: "Hotel not found." });
     }
   } catch (error) {
-    res.status(500).json({ error: "Failed to get movies." });
+    res.status(500).json({ error: "Failed to get hotels." });
   }
 });
 
@@ -95,7 +95,7 @@ app.get("/hotels/directory/:phoneNumber", async (req, res) => {
       res.status(404).json({ error: "Hotel not found." });
     }
   } catch (error) {
-    res.status(500).json({ error: "Failed to get movies." });
+    res.status(500).json({ error: "Failed to get hotels." });
   }
 })
 
@@ -118,7 +118,7 @@ app.get("/hotels/rating/:hotelrating", async (req, res) => {
       res.status(404).json({ error: "Hotel not found." });
     }
   } catch (error) {
-    res.status(500).json({ error: "Failed to get movies." });
+    res.status(500).json({ error: "Failed to get hotels." });
   }
 })
 
@@ -141,7 +141,7 @@ app.get("/hotels/category/:hotelCategory", async (req, res) => {
       res.status(404).json({ error: "Hotel not found." });
     }
   } catch (error) {
-    res.status(500).json({ error: "Failed to get movies." });
+    res.status(500).json({ error: "Failed to get hotels." });
   }
 })
 
